@@ -105,7 +105,7 @@ TABULATION:
 
 
 Calculation
-1.	ma (Theory) = am/ac =
+1.	ma (Theory) = am/ac =4.4/8.5=0.5176
 2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
 
 
