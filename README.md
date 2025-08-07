@@ -74,12 +74,28 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	If any Error, correct it in code and execute again
 •	Verify the generated waveform using Tabulation and Model Waveform
 
-Program
+Program:
+Am=4.4;
+Ac=8.5;
+fm=352;
+fc=3520;
+fs=35200;
+t=0:1/fs:2/fm;
+m=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,c);
+s=(Ac+m).*cos(2*3.14*fc*t);
+subplot(3,1,3);
+plot(t,s);
 
 
 
 Output Waveform
 
+<img width="1607" height="992" alt="amplitude modification img" src="https://github.com/user-attachments/assets/d7bb8373-25b5-45cc-9118-8f1c49716236" />
 
 
 
